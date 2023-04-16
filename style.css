@@ -338,10 +338,226 @@ form{
   
 
 }
+.burger{
+    display:none;
+    width: 50px;
+    height: 50px;
+    margin-top: 5%;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.burger:hover{
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+}
+.burger-line{
+    width: 100%;
+    height: 5px;
+    background: #fff;
+    margin: 5px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.burger-line:hover{
+    background: #9054fc;
+    transition: all 0.3s ease;
+}
 
 
+/*make this webiste responsible for mobile devices with media query*/
+@media screen and (max-width: 280px){
+   *{
+    max-width:280px;
+   }
+   .nav-bar ul{
+    width:280px;
+   }
+
+   .current-event h1{
+    font-size: 20px;
+    
+   }
+   .current-event img{
+    width: 280px;
+    height: fit-content;
+   }
+   .current-event-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: auto;
+    height: 100%;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+
+   }
+   
+ }
+@media screen and (max-width: 400px){
+    
+    .logo-big{
+     display:flex;
+     width:auto;
+     flex-direction: column;
+    }
+     .logo-big img{
+      width: 150px;
+      height: 100%;
+     }
+     .nav-bar ul{
+         width: 380px;
+         height: fit-content;
+         }
+     .nav-bar ul li{
+         width: 100%;
+         height: 50px;
+         margin: 10px;
+         padding: 10px;
+         border: 1px solid #9054fc;
+         border-radius: 5px;
+         
+         color: #fff;
+         font-size: 16px;
+         font-weight: 500;
+         transition: all 0.3s ease;
+         text-align: center;
+         align-items: center;
+         align-content: center;
+         justify-content: center;
+         display: flex;
+     
+     }
+     .current-event{
+         width: 100%;
+         height: 100%;
+         margin-bottom:90%;
+         align-content: center;
+         align-items: center;
+         text-align: center;
+ 
+     }
+     .social-media{
+         width: 100%;
+         margin-top: 50%;
+         align-content: center;
+         align-items: center;
+         text-align: center;
+ 
+     }
+ }
+@media screen and (max-width: 500px){
+    .logo-big{
+        display:flex;
+        width: auto;
+        flex-direction: column;
+       }
+        .logo-big img{
+         width: 150px;
+         height: 100%;
+        }
+        .nav-bar ul{
+            width: 380px;
+            height: fit-content;
+            }
+        .nav-bar ul li{
+            width: 100%;
+            height: 50px;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #9054fc;
+            border-radius: 5px;
+            
+            color: #fff;
+            font-size: 16px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            text-align: center;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            display: flex;
+        
+        }
+        .current-event{
+            width: 100%;
+            height: 100%;
+            margin-bottom:90%;
+            align-content: center;
+            align-items: center;
+            text-align: center;
+    
+        }
+        .social-media{
+            width: 100%;
+            margin-top: 50%;
+            align-content: center;
+            align-items: center;
+            text-align: center;
+    
+        }
+}
 
 
+@media screen and (max-width: 608px){
+    .burger{
+        display: block;
+    }
+
+    .current-event{
+        width: auto;
+        margin-bottom: 50%;
+
+        
+    }
+    .nav-bar{
+        width: auto;
+        height: fit-content;
+        }
+ 
+    .social-media{
+        width: 100%;
+        margin-top: 50%;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+    
 
 
+}
 
+@media screen and (max-width: 800px){
+ 
+    .current-event{
+        width: auto;
+      
+    }
+    .current-event h1:hover{
+        transition: 1s ease-in-out ;
+    }
+    .nav-bar{
+        width: auto;
+        height: fit-content;
+        }
+ 
+    .social-media{
+        width: 100%;
+        margin-top: 50%;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+   
+}
